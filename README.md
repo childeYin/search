@@ -8,7 +8,9 @@
 
 - 使用了了react native
   
-- 接口返回数据类型
+- 文件里面包含数据 SearchPageWordFile.js (使用了immutable)
+  
+- 接口返回数据类型 SearchPage.js
   
   ``` 
   example
