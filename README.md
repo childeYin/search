@@ -4,4 +4,19 @@
 
 #### 说明
 
-- 使用了了react native 
+- 使用了了react native
+  
+- 接口返回数据类型
+  
+  ``` 
+  example
+  
+  input: tcp
+  output:
+  {
+  	"response": {
+      	"status": true, 
+      	"full_word": "transmission control protocol"
+  	}
+  }
+  ```

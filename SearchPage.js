@@ -106,7 +106,7 @@ class SearchPage extends Component {
       //   component: SearchResults,
       //   passProps: { listings: response.listings }
       // });
-         this.setState({ message: response.listings });
+         this.setState({ message: response.full_word });
     } else {
       this.setState({ message: 'Location not recognized; please try again.'+response.status });
     }
