@@ -2,6 +2,8 @@
 
 再看tcp/ip的时候突然想做一个输入简写返回给你全称的app,仅限于计算机语言.基于ios
 
+代码在https://gist.github.com/noscripter/938986dd4ddc01195c9a#comment-1459630 的基础上稍作了修改
+
 #### 说明
 
 - 使用了了react native
