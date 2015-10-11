@@ -1,4 +1,4 @@
-// SearchPage.js
+// SearchPageWordFile.js
 'use strict';
 
 var React = require('react-native');
@@ -7,7 +7,7 @@ var words = Immutable.Map({
         'tcp' : 'transmisson control protocol',
         'udp' : 'user datagram protocol',
         'icmp': 'internet control message protocol',
-        'igmp': 'internet group manage protocol'
+        'igmp': 'internet group manage protocol',
       });
 
 var {
@@ -115,7 +115,6 @@ class SearchPageWordFile extends Component {
         <View style={styles.flowRight}>
           <TextInput
             style={styles.searchInput}
-            value={this.state.searchString}
             onChange={this.onSearchTextChanged.bind(this)}
             placeholder='tcp' />
           <TouchableHighlight style={styles.button}

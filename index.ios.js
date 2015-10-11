@@ -7,7 +7,7 @@
 
 var React = require('react-native');
 var SearchPage = require('./SearchPage');//接口模式
-//var SearchPage = require('./SearchPageWordFile'); //存储在文件中
+var SearchPageWordFile = require('./SearchPageWordFile'); //存储在文件中
 
 var {
   NavigatorIOS,
@@ -24,8 +24,8 @@ class SearchProject extends React.Component{
         style={Styles.container}
         initialRoute={{
           title: 'Search',
-          component: SearchPage
-          //  component: SearchPageWordFile
+          //component: SearchPage
+          component: SearchPageWordFile
 
         }}
       />

@@ -131,7 +131,6 @@ class SearchPage extends Component {
         <View style={styles.flowRight}>
           <TextInput
             style={styles.searchInput}
-            value={this.state.searchString}
             onChange={this.onSearchTextChanged.bind(this)}
             placeholder='tcp' />
           <TouchableHighlight style={styles.button}
