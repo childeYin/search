@@ -3,12 +3,8 @@
 
 var React = require('react-native');
 var Immutable = require('immutable');
-var words = Immutable.Map({
-        'tcp' : 'transmisson control protocol',
-        'udp' : 'user datagram protocol',
-        'icmp': 'internet control message protocol',
-        'igmp': 'internet group manage protocol',
-      });
+var Words = require('./Word.js');
+var SearchResults = require('./SearchResults');
 
 var {
   NavigatorIOS,
@@ -75,6 +71,7 @@ var styles = StyleSheet.create({
 });
 
 class SearchPageWordFile extends Component {
+ 
   constructor(props) {
     super(props);
     this.state = {
@@ -90,9 +87,9 @@ class SearchPageWordFile extends Component {
   }
   _executeQuery(query) {
     var key = query.toLocaleLowerCase();
-    var value = words.get(key);
+    var  value = Words.words.get(key);
     if (value) {
-      this.setState({ message: words.get(key)});
+      this.setState({ message: value});
     } else {
        this.setState({ message:"sorry, can't found it!"});
     }
